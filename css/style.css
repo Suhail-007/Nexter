@@ -16,6 +16,7 @@ body {
   color: #6D5D4B;
   font-weight: 300;
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 .container {
@@ -309,6 +310,37 @@ body {
 .footer {
   background: #101d2c;
   grid-column: full-start/full-end;
+}
+.footer__nav {
+  padding: 8rem;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  align-items: center;
+  gap: 2rem;
+}
+.footer__nav__item__link:link, .footer__nav__item__link:visited {
+  font-size: 1.4rem;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.25rem;
+  display: block;
+  transition: all 0.3s;
+}
+.footer__nav__item__link:hover, .footer__nav__item__link:active {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-3px);
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #aaa;
+  margin: 6rem auto 0;
+  text-align: center;
+  width: 70%;
 }
 
 /*# sourceMappingURL=style.css.map */
