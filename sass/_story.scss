@@ -2,7 +2,6 @@
   &__pictures {
     background: $color-primary;
     background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary,  .5)), url(../img/back.jpg);
-    background-size: cover;
     grid-column: full-start / col-end 4;
 
     display: grid;
