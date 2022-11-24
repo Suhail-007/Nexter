@@ -94,6 +94,13 @@ body {
   background: #B28451;
   grid-column: sidebar-start/sidebar-end;
   grid-row: 1/-1;
+  display: flex;
+  justify-content: center;
+}
+.sidebar svg {
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem auto 0;
 }
 
 .header {
