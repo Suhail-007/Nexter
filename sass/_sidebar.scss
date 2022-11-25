@@ -2,14 +2,26 @@
   background: $color-primary-dark;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
-  
+
   display: flex;
   justify-content: center;
-  
-  
+
+  @media only screen and (max-width: $bp-large) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-content: end;
+    align-items: center
+  }
+
+
   & svg {
     width: 4rem;
     height: 4rem;
     margin: 1rem auto 0;
+
+    @media only screen and (max-width: $bp-large) {
+      margin: 0;
+      margin-right: 3rem;
+    }
   }
 }
